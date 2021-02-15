@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js" defer="defer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <article id="typographicScale">
+            <button onclick="removeNote('top', -1);">-</button>
+            <button>+</button>
+            
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+            <div class="noteContainer">
+                <p class= "noteInfo"> 16px</p>
+                <p class="note">A Typographic Scale</p>
+            </div>
+
+            <button>-</button>
+            <button>+</button>
+        </article>
+
+    </section>
+    <section id="submissionForm">
+    
+        <article >
+            <form action="">
+                <label for="baseSize">Base Size(f<sub>0</sub>):</label>
+                <input type="text" name="baseSize" id="baseSize">
+                
+                <label for="ratio">Ratio(r):</label>
+                <input type="text" name="ratio" id="ratio">
+                
+                <label for="notes">Number of Notes(n):</label>
+                <input type="text" name="notes" id="notes">
+                
+                
+            </form>
+
+                <button type="submit" onclick="getData()">Submit</button>
+        </article>
+    </section>
+</body>
+</html>

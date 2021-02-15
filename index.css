@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    --accentHigh:#74A77C;
+    --accentMid:#98B79B;
+    --accentLow:#BBE2B4;
+    --dark:rgb(49, 49, 49);
+    --light:#fff;
+}
+
+html{
+    background-color: var(--dark);
+    margin: 0 25%;
+}
+
+body{
+    background-color: var(--accentHigh);
+    
+}
+
+section:nth-child(1){
+    background: radial-gradient(ellipse 150% 180% at -5% 50%,var(--accentLow) 50%, transparent 120%), url(21173048.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#typographicScale{
+    padding: 1em 01em;
+}
+#typographicScale >div{
+    margin: 1em 0;
+}
+
+
+
+#typographicScale>button{
+    border-color: transparent;
+    background-color: var(--accentMid);
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 2em;
+    margin: 1em 0.5em;
+}
+
+.noteContainer:nth-last-child(-n+1){
+    margin-bottom: 0px;
+}
+
+div.noteContainer{
+    margin-bottom: 0em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noteInfo{
+    padding-right: 1em;
+}
+
+#submissionForm{
+    padding-top: 2em;
+    padding-left: 1.25em;
+    background-color: var(--accentHigh);
+}
+
+#submissionForm >article>form>input{
+    margin-bottom: 1.5em;
+}
+
+form>*{
+    display: block;
+    
+}
+
+form>label:nth-child(1){
+    margin-left: 0.25em;
+}
+
+form >label{
+    margin-left: 0.25em;
+}
+
+form >input{
+    background-color: var(--light);
+    border-color: transparent;
+    border-radius: 0.25em;
+}
+
+form>button[type="submit"]{
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 800px){
+    html{
+        margin: 0 0;
+    }
+    
+    div.noteContainer{
+        margin-bottom: 1em;
+        display: block;
+        flex-wrap: wrap;
+    }
+}
